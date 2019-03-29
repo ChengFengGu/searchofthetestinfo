@@ -3,13 +3,13 @@
 ## 1、修改数据库密码为本机的数据库密码
 
 - 在`application.properties`中修改（目录如下图）（解压缩war包可见到类似目录）
-- ![1553868833900](C:\Users\卢华源\AppData\Roaming\Typora\typora-user-images\1553868833900.png)
+- ![1553868833900](images\1553868833900.png)
 
-- 内容如右图：修改password![1553868915139](C:\Users\卢华源\AppData\Roaming\Typora\typora-user-images\1553868915139.png)
+- 内容如右图：修改password![1553868915139](images\1553868915139.png)
 
 - 在`myabtis-config.xml`中的数据连接池也修改数据库密码
 
-  ![1553869393394](C:\Users\卢华源\AppData\Roaming\Typora\typora-user-images\1553869393394.png)
+  ![1553869393394](images\1553869393394.png)
 
 ## 2、将数据库脚本（下列出）执行以生成数据库
 
