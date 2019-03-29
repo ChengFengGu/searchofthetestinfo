@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="TestInfo" type="com.haut.searchofthetestinfo.po.InfoTest" />
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver" />
+                <property name="url" value="jdbc:mysql://localhost:3306/springboot_demo?serverTimezone=GMT%2B8" />
+                <property name="username" value="root" />
+                <property name="password" value="0305" />
+            </dataSource>
+        </environment>
+    </environments>
+
+<mappers>
+    <mapper resource="com/haut/searchofthetestinfo/mapper/InfoTestMapper.xml"></mapper>
+</mappers>
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <!--作者：sweetException-->
+    <!--来源：CSDN-->
+    <!--原文：https://blog.csdn.net/YQYnsmile/article/details/52807815-->
+    <!--版权声明：本文为博主原创文章，转载请附上博文链接！-->
+</configuration>

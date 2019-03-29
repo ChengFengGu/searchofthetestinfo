@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace为命名空间，应该是mapper接口的全称-->
+<mapper namespace="com.haut.searchofthetestinfo.mapper.InfoTestMapper">
+
+    <select id="findById" parameterType = "String" resultType = "com.haut.searchofthetestinfo.po.InfoTest">
+        select * from infotest where person_id = #{person_id}
+    </select>
+
+    <insert id="insert" parameterType="com.haut.searchofthetestinfo.po.InfoTest" >
+        insert ignore into
+        infotest (test_id,person_id,name,majorOfApply,institueOfApply,foreignLanguage,firstCourse, secondCourse,total)
+        values (#{test_id},#{person_id},#{name},#{majorOfApply},#{instituteOfApply},#{foreignLanguage}, #{firstCourse},#{secondCourse},#{total})
+    </insert>
+
+</mapper>
